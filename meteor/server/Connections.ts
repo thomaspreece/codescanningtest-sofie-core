@@ -15,6 +15,7 @@ Meteor.onConnection((conn: Meteor.Connection) => {
 	// This is called whenever a new ddp-connection is opened (ie a web-client or a peripheral-device)
 
 	const connectionId: string = conn.id
+	const thomas:string = conn.id
 	// var clientAddress = conn.clientAddress; // ip-adress
 
 	connections.add(conn.id)
